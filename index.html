@@ -8,6 +8,7 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/58d5cbd9fe.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styless.css">
+
     <title>Instagram Boostrap</title>
     <style>
         .card {
@@ -17,8 +18,28 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div id="exampleModal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¿Que estas haciendo? ¡Compartelo!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <textarea name="" class="w-100" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div class="container">
+    <div class="container-fluid m-0 p-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -26,8 +47,11 @@
                     <i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
 
                 <div class="dropdown">
+
+                    <!-- Modal -->
                     <button type="button" class="btn btn-success " data-toggle="modal" data-target="#exampleModal">Crear
                         un nuevo post</button>
+
                     <i class="fa fa-cog btn btn-secondary dropdown-toggle" aria-hidden="true" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> </i>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -80,7 +104,8 @@
                 width="100%" width="100%" alt="">
         </div>
         <div class="card col-4">
-            <img src="https://i.picsum.photos/id/66/700/500.jpg?hmac=bxEv19jEGEb_5qhBA5ADNs1ExtuaMKwRnwj-69DNNEA" width="100%" width="100%" alt="">
+            <img src="https://i.picsum.photos/id/66/700/500.jpg?hmac=bxEv19jEGEb_5qhBA5ADNs1ExtuaMKwRnwj-69DNNEA"
+                width="100%" width="100%" alt="">
         </div>
         <div class="card col-4">
             <img src="https://i.picsum.photos/id/456/700/500.jpg?hmac=YyLaKandJ-cvfGEEPju9-dGZD1sTTp1CUflpj6zaROs"
